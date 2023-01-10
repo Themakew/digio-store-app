@@ -12,8 +12,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Private Properties
 
     private(set) lazy var mainWindow = UIWindow()
-
-//    private let router = AppCoordinator().strongRouter
+    private let router = AppCoordinator().strongRouter
 
     // MARK: - Internal Methods
 
@@ -21,8 +20,8 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
-//        mainWindow.backgroundColor = .white
-//        router.setRoot(for: mainWindow)
+        mainWindow.backgroundColor = .white
+        router.setRoot(for: mainWindow)
         return true
     }
 }

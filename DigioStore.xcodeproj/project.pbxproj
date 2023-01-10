@@ -19,6 +19,8 @@
 		567D1F3B296DA2DC00CAD71B /* ProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D1F3A296DA2DC00CAD71B /* ProductsResponse.swift */; };
 		567D1F3D296DA37E00CAD71B /* ProductsAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D1F3C296DA37E00CAD71B /* ProductsAPIService.swift */; };
 		567D1F3F296DA41900CAD71B /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D1F3E296DA41900CAD71B /* APIRequest.swift */; };
+		567D1F43296DDBBF00CAD71B /* ProductsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D1F42296DDBBF00CAD71B /* ProductsRepository.swift */; };
+		567D1F48296DDC1000CAD71B /* ProductsRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D1F47296DDC1000CAD71B /* ProductsRepositoryProtocol.swift */; };
 		56E36CF6296C92CB000745E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E36CF5296C92CB000745E5 /* AppDelegate.swift */; };
 		56E36CFF296C92CC000745E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56E36CFE296C92CC000745E5 /* Assets.xcassets */; };
 		56E36D02296C92CC000745E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E36D00296C92CC000745E5 /* LaunchScreen.storyboard */; };
@@ -52,6 +54,8 @@
 		567D1F3A296DA2DC00CAD71B /* ProductsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsResponse.swift; sourceTree = "<group>"; };
 		567D1F3C296DA37E00CAD71B /* ProductsAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsAPIService.swift; sourceTree = "<group>"; };
 		567D1F3E296DA41900CAD71B /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		567D1F42296DDBBF00CAD71B /* ProductsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepository.swift; sourceTree = "<group>"; };
+		567D1F47296DDC1000CAD71B /* ProductsRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepositoryProtocol.swift; sourceTree = "<group>"; };
 		56E36CF2296C92CB000745E5 /* DigioStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigioStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56E36CF5296C92CB000745E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56E36CFE296C92CC000745E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -140,7 +144,6 @@
 		567D1F25296D8B5400CAD71B /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				567D1F2A296D917200CAD71B /* NetworkError.swift */,
 				567D1F31296D9A8000CAD71B /* URLSessionProtocol.swift */,
 			);
 			path = Protocols;
@@ -187,6 +190,55 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		567D1F40296DDB7100CAD71B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				567D1F41296DDB7D00CAD71B /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		567D1F41296DDB7D00CAD71B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				567D1F42296DDBBF00CAD71B /* ProductsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		567D1F44296DDBEC00CAD71B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				567D1F45296DDBF600CAD71B /* Protocols */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		567D1F45296DDBF600CAD71B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				567D1F49296DDC6A00CAD71B /* Network */,
+				567D1F46296DDC0100CAD71B /* Repositories */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		567D1F46296DDC0100CAD71B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				567D1F47296DDC1000CAD71B /* ProductsRepositoryProtocol.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		567D1F49296DDC6A00CAD71B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				567D1F2A296D917200CAD71B /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		56E36CE9296C92CB000745E5 = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +264,8 @@
 			children = (
 				567D1F0D296D892200CAD71B /* Application */,
 				567D1F23296D8A4400CAD71B /* Infrastructure */,
+				567D1F40296DDB7100CAD71B /* Data */,
+				567D1F44296DDBEC00CAD71B /* Domain */,
 				567D1F22296D8A2D00CAD71B /* Resources */,
 				567D1F21296D89F900CAD71B /* Supporting Files */,
 			);
@@ -399,6 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				567D1F43296DDBBF00CAD71B /* ProductsRepository.swift in Sources */,
 				567D1F3D296DA37E00CAD71B /* ProductsAPIService.swift in Sources */,
 				567D1F32296D9A8000CAD71B /* URLSessionProtocol.swift in Sources */,
 				56E36CF6296C92CB000745E5 /* AppDelegate.swift in Sources */,
@@ -406,6 +461,7 @@
 				567D1F30296D925900CAD71B /* URLSession+Misc.swift in Sources */,
 				567D1F3B296DA2DC00CAD71B /* ProductsResponse.swift in Sources */,
 				567D1F3F296DA41900CAD71B /* APIRequest.swift in Sources */,
+				567D1F48296DDC1000CAD71B /* ProductsRepositoryProtocol.swift in Sources */,
 				567D1F2B296D917200CAD71B /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

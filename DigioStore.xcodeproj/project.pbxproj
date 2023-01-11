@@ -44,6 +44,14 @@
 		569A04AC296F039B00F1C56D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 569A04AB296F039B00F1C56D /* Kingfisher */; };
 		569A04AE296F3D5900F1C56D /* DetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04AD296F3D5900F1C56D /* DetailEntity.swift */; };
 		569A04B2296F487400F1C56D /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04B1296F487400F1C56D /* Images.swift */; };
+		569A04B8296F599400F1C56D /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04B7296F599400F1C56D /* TitleCell.swift */; };
+		569A04BD296F60B900F1C56D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04BC296F60B900F1C56D /* DetailViewController.swift */; };
+		569A04BF296F60D300F1C56D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04BE296F60D300F1C56D /* DetailViewModel.swift */; };
+		569A04C1296F68C700F1C56D /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04C0296F68C700F1C56D /* ErrorView.swift */; };
+		569A04C4296F690700F1C56D /* RxGesture in Frameworks */ = {isa = PBXBuildFile; productRef = 569A04C3296F690700F1C56D /* RxGesture */; };
+		569A04C6296F6A5F00F1C56D /* ErrorEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04C5296F6A5F00F1C56D /* ErrorEntity.swift */; };
+		569A04C8296F6B6700F1C56D /* ErrorUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04C7296F6B6700F1C56D /* ErrorUseCase.swift */; };
+		569A04CA296F6BD300F1C56D /* ErrorUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04C9296F6BD300F1C56D /* ErrorUseCaseProtocol.swift */; };
 		56E36CF6296C92CB000745E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E36CF5296C92CB000745E5 /* AppDelegate.swift */; };
 		56E36CFF296C92CC000745E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56E36CFE296C92CC000745E5 /* Assets.xcassets */; };
 		56E36D02296C92CC000745E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E36D00296C92CC000745E5 /* LaunchScreen.storyboard */; };
@@ -89,7 +97,7 @@
 		567D1F66296DE34F00CAD71B /* Apply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apply.swift; sourceTree = "<group>"; };
 		567D1F68296E0D5500CAD71B /* ProductsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsEntity.swift; sourceTree = "<group>"; };
 		567D1F6A296E11E200CAD71B /* Rx+Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rx+Misc.swift"; sourceTree = "<group>"; };
-		567D1F6C296E1C1F00CAD71B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		567D1F6C296E1C1F00CAD71B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		569A048F296E257300F1C56D /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		569A0491296E258F00F1C56D /* HomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSource.swift; sourceTree = "<group>"; };
 		569A0495296EEDC400F1C56D /* CollectionView+Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionView+Misc.swift"; sourceTree = "<group>"; };
@@ -102,6 +110,13 @@
 		569A04A6296F01B000F1C56D /* UIView+Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Misc.swift"; sourceTree = "<group>"; };
 		569A04AD296F3D5900F1C56D /* DetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEntity.swift; sourceTree = "<group>"; };
 		569A04B1296F487400F1C56D /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		569A04B7296F599400F1C56D /* TitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
+		569A04BC296F60B900F1C56D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		569A04BE296F60D300F1C56D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		569A04C0296F68C700F1C56D /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		569A04C5296F6A5F00F1C56D /* ErrorEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorEntity.swift; sourceTree = "<group>"; };
+		569A04C7296F6B6700F1C56D /* ErrorUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorUseCase.swift; sourceTree = "<group>"; };
+		569A04C9296F6BD300F1C56D /* ErrorUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorUseCaseProtocol.swift; sourceTree = "<group>"; };
 		56E36CF2296C92CB000745E5 /* DigioStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigioStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56E36CF5296C92CB000745E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56E36CFE296C92CC000745E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,6 +139,7 @@
 				567D1F39296D9B2300CAD71B /* RxSwift in Frameworks */,
 				567D1F37296D9B2300CAD71B /* RxRelay in Frameworks */,
 				567D1F13296D898900CAD71B /* XCoordinator in Frameworks */,
+				569A04C4296F690700F1C56D /* RxGesture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +171,7 @@
 		567D1F21296D89F900CAD71B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				567D1F6C296E1C1F00CAD71B /* Info.plist */,
 				56E36D00296C92CC000745E5 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
@@ -294,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				567D1F4C296DDDDC00CAD71B /* ProductsUseCase.swift */,
+				569A04C7296F6B6700F1C56D /* ErrorUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -305,6 +323,7 @@
 				569A048F296E257300F1C56D /* DataSource.swift */,
 				569A0491296E258F00F1C56D /* HomeDataSource.swift */,
 				569A04AD296F3D5900F1C56D /* DetailEntity.swift */,
+				569A04C5296F6A5F00F1C56D /* ErrorEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -313,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				567D1F4F296DDE3400CAD71B /* ProductsUseCaseProtocol.swift */,
+				569A04C9296F6BD300F1C56D /* ErrorUseCaseProtocol.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -341,6 +361,7 @@
 			isa = PBXGroup;
 			children = (
 				567D1F5A296DDF7300CAD71B /* Home */,
+				569A04B9296F609400F1C56D /* Detail */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -427,6 +448,7 @@
 		569A0498296EEE4C00F1C56D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				569A04C0296F68C700F1C56D /* ErrorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -434,6 +456,7 @@
 		569A0499296EEE5400F1C56D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				569A04B6296F598500F1C56D /* Title */,
 				569A04AF296F417800F1C56D /* Spotlight */,
 				569A04B5296F48FD00F1C56D /* Cash */,
 				569A04B0296F418300F1C56D /* Products */,
@@ -483,6 +506,39 @@
 			path = Cash;
 			sourceTree = "<group>";
 		};
+		569A04B6296F598500F1C56D /* Title */ = {
+			isa = PBXGroup;
+			children = (
+				569A04B7296F599400F1C56D /* TitleCell.swift */,
+			);
+			path = Title;
+			sourceTree = "<group>";
+		};
+		569A04B9296F609400F1C56D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				569A04BA296F609D00F1C56D /* ViewController */,
+				569A04BB296F60A900F1C56D /* ViewModel */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		569A04BA296F609D00F1C56D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				569A04BC296F60B900F1C56D /* DetailViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		569A04BB296F60A900F1C56D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				569A04BE296F60D300F1C56D /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		56E36CE9296C92CB000745E5 = {
 			isa = PBXGroup;
 			children = (
@@ -506,7 +562,6 @@
 		56E36CF4296C92CB000745E5 /* DigioStore */ = {
 			isa = PBXGroup;
 			children = (
-				567D1F6C296E1C1F00CAD71B /* Info.plist */,
 				567D1F0D296D892200CAD71B /* Application */,
 				567D1F23296D8A4400CAD71B /* Infrastructure */,
 				567D1F40296DDB7100CAD71B /* Data */,
@@ -559,6 +614,7 @@
 				567D1F36296D9B2300CAD71B /* RxRelay */,
 				567D1F38296D9B2300CAD71B /* RxSwift */,
 				569A04AB296F039B00F1C56D /* Kingfisher */,
+				569A04C3296F690700F1C56D /* RxGesture */,
 			);
 			productName = DigioStore;
 			productReference = 56E36CF2296C92CB000745E5 /* DigioStore.app */;
@@ -636,6 +692,7 @@
 				567D1F11296D898900CAD71B /* XCRemoteSwiftPackageReference "XCoordinator" */,
 				567D1F33296D9B2300CAD71B /* XCRemoteSwiftPackageReference "RxSwift" */,
 				569A04AA296F039B00F1C56D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				569A04C2296F690700F1C56D /* XCRemoteSwiftPackageReference "RxGesture" */,
 			);
 			productRefGroup = 56E36CF3296C92CB000745E5 /* Products */;
 			projectDirPath = "";
@@ -706,13 +763,19 @@
 				567D1F43296DDBBF00CAD71B /* ProductsRepository.swift in Sources */,
 				569A04A5296EF63E00F1C56D /* ProductItemCell.swift in Sources */,
 				569A04A3296EF41800F1C56D /* SpotlightItemCell.swift in Sources */,
+				569A04BD296F60B900F1C56D /* DetailViewController.swift in Sources */,
+				569A04C8296F6B6700F1C56D /* ErrorUseCase.swift in Sources */,
 				567D1F61296DDFC200CAD71B /* HomeCoordinator.swift in Sources */,
+				569A04C1296F68C700F1C56D /* ErrorView.swift in Sources */,
 				569A0496296EEDC400F1C56D /* CollectionView+Misc.swift in Sources */,
 				567D1F63296DDFD000CAD71B /* HomeViewModel.swift in Sources */,
 				569A04A1296EEF3E00F1C56D /* Configurable.swift in Sources */,
+				569A04C6296F6A5F00F1C56D /* ErrorEntity.swift in Sources */,
 				567D1F59296DDF5700CAD71B /* AppCoordinator.swift in Sources */,
 				567D1F3D296DA37E00CAD71B /* ProductsAPIService.swift in Sources */,
 				569A0492296E258F00F1C56D /* HomeDataSource.swift in Sources */,
+				569A04B8296F599400F1C56D /* TitleCell.swift in Sources */,
+				569A04CA296F6BD300F1C56D /* ErrorUseCaseProtocol.swift in Sources */,
 				567D1F50296DDE3400CAD71B /* ProductsUseCaseProtocol.swift in Sources */,
 				567D1F5F296DDFA800CAD71B /* HomeViewController.swift in Sources */,
 				569A04A7296F01B000F1C56D /* UIView+Misc.swift in Sources */,
@@ -722,6 +785,7 @@
 				567D1F69296E0D5500CAD71B /* ProductsEntity.swift in Sources */,
 				567D1F2D296D919A00CAD71B /* ServiceAPICall.swift in Sources */,
 				567D1F30296D925900CAD71B /* URLSession+Misc.swift in Sources */,
+				569A04BF296F60D300F1C56D /* DetailViewModel.swift in Sources */,
 				567D1F3B296DA2DC00CAD71B /* ProductsResponse.swift in Sources */,
 				567D1F3F296DA41900CAD71B /* APIRequest.swift in Sources */,
 				567D1F67296DE34F00CAD71B /* Apply.swift in Sources */,
@@ -903,7 +967,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K992HP865M;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DigioStore/Info.plist;
+				INFOPLIST_FILE = "DigioStore/Supporting Files/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -936,7 +1000,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K992HP865M;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DigioStore/Info.plist;
+				INFOPLIST_FILE = "DigioStore/Supporting Files/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -1102,6 +1166,14 @@
 				kind = branch;
 			};
 		};
+		569A04C2296F690700F1C56D /* XCRemoteSwiftPackageReference "RxGesture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxGesture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1134,6 +1206,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 569A04AA296F039B00F1C56D /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		569A04C3296F690700F1C56D /* RxGesture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 569A04C2296F690700F1C56D /* XCRemoteSwiftPackageReference "RxGesture" */;
+			productName = RxGesture;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

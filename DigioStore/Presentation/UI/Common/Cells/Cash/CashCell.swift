@@ -19,7 +19,6 @@ final class CashCell: UICollectionViewCell {
         $0.layer.shadowOffset = .zero
         $0.layer.shadowRadius = 5
         $0.layer.shouldRasterize = true
-        $0.backgroundColor = .red
     }
 
     private let thumbnailImage = UIImageView(translateMask: false).apply {

@@ -11,6 +11,7 @@ import XCoordinator
 enum HomeRouter: Route {
     case home
     case detailScreen(object: DetailEntity)
+    case dismiss
 }
 
 final class HomeCoordinator: NavigationCoordinator<HomeRouter> {
@@ -30,11 +31,16 @@ final class HomeCoordinator: NavigationCoordinator<HomeRouter> {
             let serviceAPI = ProductsAPIService(serviceAPI: service)
             let repository = ProductsRepository(productsService: serviceAPI)
             let useCase = ProductsUseCase(productsRepository: repository)
-            let viewModel = HomeViewModel(router: weakRouter, productsUseCase: useCase)
+            let errorUseCase = ErrorUseCase()
+            let viewModel = HomeViewModel(router: weakRouter, productsUseCase: useCase, errorUseCase: errorUseCase)
             let viewController = HomeViewController(viewModel: viewModel)
             return .push(viewController)
         case let .detailScreen(object):
-            return .push(UIViewController())
+            let viewModel = DetailViewModel(router: weakRouter, detailObject: object)
+            let viewController = DetailViewController(viewModel: viewModel)
+            return .push(viewController)
+        case .dismiss:
+            return .pop()
         }
     }
 }

@@ -27,6 +27,10 @@ final class HomeViewController: UIViewController {
         $0.backgroundColor = .white
     }
 
+    private let errorView = ErrorView(translateMask: false).apply {
+        $0.backgroundColor = .white
+    }
+
     // MARK: - Initializers
 
     init(viewModel: HomeViewModelProtocol) {
@@ -45,14 +49,26 @@ final class HomeViewController: UIViewController {
         super.viewDidLoad()
         setupView()
         bindRx()
-    }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         viewModel.input.getProducts.accept(())
     }
 
     // MARK: - Private Methods
+
+    private func addErrorScreen(isHidden: Bool) {
+        if isHidden {
+            errorView.removeFromSuperview()
+        } else {
+            view.addSubview(errorView)
+
+            NSLayoutConstraint.activate([
+                errorView.topAnchor.constraint(equalTo: view.topAnchor),
+                errorView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                errorView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                errorView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            ])
+        }
+    }
 
     private func bindRx() {
         viewModel.output.dataSource
@@ -80,6 +96,15 @@ final class HomeViewController: UIViewController {
                     cell.configure(content: configuration)
 
                     return cell
+                case is TitleEntity:
+                    guard let configuration = dataSource as? TitleEntity else {
+                        return UICollectionViewCell()
+                    }
+
+                    let cell = collectionView.dequeue(cellClass: TitleCell.self, indexPath: indexPath)
+                    cell.configure(content: configuration)
+
+                    return cell
                 default:
                     guard let configuration = dataSource as? HomeProductSection else {
                         return UICollectionViewCell()
@@ -91,6 +116,23 @@ final class HomeViewController: UIViewController {
                     return cell
                 }
             }
+            .disposed(by: disposeBag)
+
+        collectionView.rx.itemSelected
+            .filter { $0.item == 2 }
+            .bind(to: viewModel.input.cashItemSelected)
+            .disposed(by: disposeBag)
+
+        viewModel.output.setErrorAlert
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] object in
+                if let object = object {
+                    self?.addErrorScreen(isHidden: false)
+                    self?.errorView.configure(content: object)
+                } else {
+                    self?.addErrorScreen(isHidden: true)
+                }
+            })
             .disposed(by: disposeBag)
     }
 }
@@ -117,5 +159,6 @@ extension HomeViewController: ViewCode {
         collectionView.register(cellClass: SpotlightCell.self)
         collectionView.register(cellClass: CashCell.self)
         collectionView.register(cellClass: ProductsCell.self)
+        collectionView.register(cellClass: TitleCell.self)
     }
 }

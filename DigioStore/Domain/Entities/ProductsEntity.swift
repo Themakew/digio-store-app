@@ -38,3 +38,9 @@ struct SpotlightEntity: DataSource {
     let bannerURL: String?
     let description: String?
 }
+
+// MARK: - Title
+
+struct TitleEntity: DataSource {
+    let title: String
+}

@@ -51,11 +51,13 @@ final class ProductsUseCase: ProductsUseCaseProtocol {
                             itemSelectedObserver: self.spotlightSelectedIndex
                         )
                     )
+                    dataSource.append(TitleEntity(title: "digio Cash"))
                     dataSource.append(
                         HomeCashSection(
                             object: object.cash ?? CashEntity(title: "", bannerURL: "", description: "")
                         )
                     )
+                    dataSource.append(TitleEntity(title: "Produtos"))
                     dataSource.append(
                         HomeProductSection(
                             items: object.products ?? [],

@@ -8,5 +8,5 @@
 import RxSwift
 
 protocol ProductsUseCaseProtocol {
-    func getProducts() -> Single<Result<ProductsResponse, NetworkError>>
+    func getProducts() -> Single<Result<HomeDataSource, NetworkError>>
 }

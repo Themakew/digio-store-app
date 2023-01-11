@@ -10,9 +10,9 @@ import Foundation
 extension URLSession: URLSessionProtocol {
     func requestData(
         with url: URL,
-        completionHandler: @escaping @Sendable (Data?, URLResponse?, Error?) -> Void
+        completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void
     ) -> URLSessionDataTaskProtocol {
-        return dataTask(with: url) as URLSessionDataTask
+        return dataTask(with: url)
     }
 }
 

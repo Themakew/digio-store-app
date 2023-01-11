@@ -17,11 +17,12 @@ protocol HomeViewModelProtocol {
 }
 
 protocol HomeViewModelInput {
-
+    var getProducts: PublishRelay<Void> { get }
 }
 
 protocol HomeViewModelOutput {
-
+    var dataSource: BehaviorRelay<HomeDataSource?> { get }
+    var setErrorAlert: PublishRelay<Void> { get }
 }
 
 extension HomeViewModelProtocol where Self: HomeViewModelInput & HomeViewModelOutput {
@@ -31,10 +32,20 @@ extension HomeViewModelProtocol where Self: HomeViewModelInput & HomeViewModelOu
 
 final class HomeViewModel: HomeViewModelProtocol, HomeViewModelInput, HomeViewModelOutput {
 
+    // MARK: - Internal Properties
+
+    // Inputs
+    let getProducts = PublishRelay<Void>()
+
+    // Outputs
+    let dataSource = BehaviorRelay<HomeDataSource?>(value: nil)
+    let setErrorAlert = PublishRelay<Void>()
+
     // MARK: - Private Properties
 
     private let router: WeakRouter<HomeRouter>
     private let productsUseCase: ProductsUseCaseProtocol
+    private let disposeBag = DisposeBag()
 
     // MARK: - Initializer
 
@@ -47,5 +58,24 @@ final class HomeViewModel: HomeViewModelProtocol, HomeViewModelInput, HomeViewMo
 
     // MARK: - Private Methods
 
-    private func bindRx() {}
+    private func bindRx() {
+        let responseResultObservable = getProducts
+            .flatMap(weak: self) { this, _ -> Observable<Result<HomeDataSource, NetworkError>> in
+                return this.productsUseCase.getProducts()
+                    .asObservable()
+            }
+            .share()
+
+        responseResultObservable
+            .withUnretained(self)
+            .subscribe(onNext: { this, result in
+                switch result {
+                case let .success(response):
+                    this.dataSource.accept(response)
+                case .failure:
+                    this.setErrorAlert.accept(())
+                }
+            })
+            .disposed(by: disposeBag)
+    }
 }

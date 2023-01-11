@@ -10,7 +10,7 @@ import Foundation
 protocol URLSessionProtocol {
     func requestData(
         with url: URL,
-        completionHandler: @escaping @Sendable (Data?, URLResponse?, Error?) -> Void
+        completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void
     ) -> URLSessionDataTaskProtocol
 }
 

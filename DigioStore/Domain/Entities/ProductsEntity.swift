@@ -1,5 +1,5 @@
 //
-//  ProductsResponse.swift
+//  ProductsEntity.swift
 //  DigioStore
 //
 //  Created by Ruyther Costa on 10/01/23.
@@ -7,17 +7,17 @@
 
 import Foundation
 
-// MARK: - ProductsResponse
+// MARK: - ProductsEntity
 
-struct ProductsResponse: Decodable, Equatable {
-    let spotlight: [Spotlight]?
-    let products: [Product]?
-    let cash: Cash?
+struct ProductsEntity {
+    let spotlight: [SpotlightEntity]?
+    let products: [ProductEntity]?
+    let cash: CashEntity?
 }
 
 // MARK: - Cash
 
-struct Cash: Decodable, Equatable {
+struct CashEntity: DataSource {
     let title: String?
     let bannerURL: String?
     let description: String?
@@ -25,7 +25,7 @@ struct Cash: Decodable, Equatable {
 
 // MARK: - Product
 
-struct Product: Decodable, Equatable {
+struct ProductEntity: DataSource {
     let name: String?
     let imageURL: String?
     let description: String?
@@ -33,7 +33,7 @@ struct Product: Decodable, Equatable {
 
 // MARK: - Spotlight
 
-struct Spotlight: Decodable, Equatable {
+struct SpotlightEntity: DataSource {
     let name: String?
     let bannerURL: String?
     let description: String?

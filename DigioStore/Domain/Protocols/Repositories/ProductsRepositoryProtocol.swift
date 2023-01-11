@@ -8,5 +8,5 @@
 import RxSwift
 
 protocol ProductsRepositoryProtocol {
-    func getProducts() -> Single<Result<ProductsResponse, NetworkError>>
+    func getProducts() -> Single<Result<ProductsEntity, NetworkError>>
 }

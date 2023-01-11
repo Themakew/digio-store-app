@@ -9,6 +9,7 @@ import UIKit
 
 @main
 final class AppDelegate: UIResponder, UIApplicationDelegate {
+
     // MARK: - Private Properties
 
     private(set) lazy var mainWindow = UIWindow()

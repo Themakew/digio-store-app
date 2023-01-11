@@ -77,5 +77,20 @@ final class HomeViewModel: HomeViewModelProtocol, HomeViewModelInput, HomeViewMo
                 }
             })
             .disposed(by: disposeBag)
+
+        let productSelectedObserver = Observable.combineLatest(productsUseCase.spotlightSelectedIndex, productsUseCase.apiResponse)
+        productsUseCase.spotlightSelectedIndex
+            .withLatestFrom(productSelectedObserver)
+            .map({ result -> SpotlightEntity? in
+                let index = result.0.item
+                return result.1?.spotlight?[index]
+            })
+            .subscribe(onNext: { [weak self] product in
+                if let product,
+                   let detailObject = self?.productsUseCase.getDetailObject(object: product) {
+                    self?.router.trigger(.detailScreen(object: detailObject))
+                }
+            })
+            .disposed(by: disposeBag)
     }
 }

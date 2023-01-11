@@ -10,6 +10,7 @@ import XCoordinator
 
 enum HomeRouter: Route {
     case home
+    case detailScreen(object: DetailEntity)
 }
 
 final class HomeCoordinator: NavigationCoordinator<HomeRouter> {
@@ -32,6 +33,8 @@ final class HomeCoordinator: NavigationCoordinator<HomeRouter> {
             let viewModel = HomeViewModel(router: weakRouter, productsUseCase: useCase)
             let viewController = HomeViewController(viewModel: viewModel)
             return .push(viewController)
+        case let .detailScreen(object):
+            return .push(UIViewController())
         }
     }
 }

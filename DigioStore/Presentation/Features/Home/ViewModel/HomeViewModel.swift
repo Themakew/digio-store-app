@@ -24,6 +24,7 @@ protocol HomeViewModelInput {
 protocol HomeViewModelOutput {
     var dataSource: BehaviorRelay<HomeDataSource?> { get }
     var setErrorAlert: PublishRelay<ErrorEntity?> { get }
+    var isLoading: BehaviorRelay<Bool> { get }
 }
 
 extension HomeViewModelProtocol where Self: HomeViewModelInput & HomeViewModelOutput {
@@ -42,6 +43,7 @@ final class HomeViewModel: HomeViewModelProtocol, HomeViewModelInput, HomeViewMo
     // Outputs
     let dataSource = BehaviorRelay<HomeDataSource?>(value: nil)
     let setErrorAlert = PublishRelay<ErrorEntity?>()
+    let isLoading = BehaviorRelay<Bool>(value: true)
 
     // MARK: - Private Properties
 
@@ -69,17 +71,19 @@ final class HomeViewModel: HomeViewModelProtocol, HomeViewModelInput, HomeViewMo
 
     private func bindRx() {
         let responseResultObservable = getProducts
-            .debug()
             .flatMap(weak: self) { this, _ -> Observable<Result<HomeDataSource, NetworkError>> in
+                this.isLoading.accept(true)
+
                 return this.productsUseCase.getProducts()
                     .asObservable()
             }
             .share()
 
         responseResultObservable
-            .debug()
             .withUnretained(self)
             .subscribe(onNext: { this, result in
+                this.isLoading.accept(false)
+
                 switch result {
                 case let .success(response):
                     this.dataSource.accept(response)

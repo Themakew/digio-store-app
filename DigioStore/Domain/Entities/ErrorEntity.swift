@@ -8,11 +8,15 @@
 import RxRelay
 import UIKit
 
+// MARK: - ErrorEntity
+
 struct ErrorEntity {
     let dataSource: GenericErrorEntity
     let tryAgainObserver: PublishRelay<Void>
     let isShown: BehaviorRelay<Bool>
 }
+
+// MARK: - GenericErrorEntity
 
 struct GenericErrorEntity {
     let messageErrorText: String

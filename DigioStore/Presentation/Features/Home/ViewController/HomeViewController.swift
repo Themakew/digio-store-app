@@ -31,6 +31,11 @@ final class HomeViewController: UIViewController {
         $0.backgroundColor = .white
     }
 
+    private let spinnerView = UIView(translateMask: false)
+    private let spinnerIndicatorView = UIActivityIndicatorView(translateMask: false).apply {
+        $0.startAnimating()
+    }
+
     // MARK: - Initializers
 
     init(viewModel: HomeViewModelProtocol) {
@@ -134,6 +139,19 @@ final class HomeViewController: UIViewController {
                 }
             })
             .disposed(by: disposeBag)
+
+        viewModel.output.isLoading
+            .observe(on: MainScheduler.asyncInstance)
+            .subscribe(onNext: { [weak self] isLoading in
+                if isLoading {
+                    self?.spinnerIndicatorView.startAnimating()
+                } else {
+                    self?.spinnerIndicatorView.stopAnimating()
+                }
+
+                self?.spinnerView.isHidden = isLoading
+            })
+            .disposed(by: disposeBag)
     }
 }
 
@@ -142,6 +160,8 @@ final class HomeViewController: UIViewController {
 extension HomeViewController: ViewCode {
     func buildViewHierarchy() {
         view.addSubview(collectionView)
+
+        spinnerView.addSubview(spinnerIndicatorView)
     }
 
     func setupConstraints() {
@@ -155,6 +175,8 @@ extension HomeViewController: ViewCode {
 
     func setupAdditionalConfiguration() {
         view.backgroundColor = .white
+
+        navigationItem.titleView = spinnerIndicatorView
 
         collectionView.register(cellClass: SpotlightCell.self)
         collectionView.register(cellClass: CashCell.self)

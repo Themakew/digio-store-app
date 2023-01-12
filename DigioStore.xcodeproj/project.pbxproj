@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56046E5D296F81470093F939 /* URLSessionDataTaskSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56046E5C296F81470093F939 /* URLSessionDataTaskSpy.swift */; };
+		56046E62296F9AF30093F939 /* DetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56046E61296F9AF30093F939 /* DetailViewModelTests.swift */; };
+		56046E79296FA3170093F939 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 56046E78296FA3170093F939 /* RxCocoa */; };
+		56046E7B296FA3170093F939 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 56046E7A296FA3170093F939 /* RxRelay */; };
+		56046E7D296FA3170093F939 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 56046E7C296FA3170093F939 /* RxSwift */; };
+		56046E7F296FA3570093F939 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 56046E7E296FA3570093F939 /* RxBlocking */; };
+		56046E81296FA3570093F939 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 56046E80296FA3570093F939 /* RxCocoa */; };
 		567D1F13296D898900CAD71B /* XCoordinator in Frameworks */ = {isa = PBXBuildFile; productRef = 567D1F12296D898900CAD71B /* XCoordinator */; };
 		567D1F15296D898900CAD71B /* XCoordinatorRx in Frameworks */ = {isa = PBXBuildFile; productRef = 567D1F14296D898900CAD71B /* XCoordinatorRx */; };
 		567D1F2B296D917200CAD71B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D1F2A296D917200CAD71B /* NetworkError.swift */; };
 		567D1F2D296D919A00CAD71B /* ServiceAPICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D1F2C296D919A00CAD71B /* ServiceAPICall.swift */; };
 		567D1F30296D925900CAD71B /* URLSession+Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D1F2F296D925900CAD71B /* URLSession+Misc.swift */; };
 		567D1F32296D9A8000CAD71B /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D1F31296D9A8000CAD71B /* URLSessionProtocol.swift */; };
-		567D1F35296D9B2300CAD71B /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 567D1F34296D9B2300CAD71B /* RxCocoa */; };
-		567D1F37296D9B2300CAD71B /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 567D1F36296D9B2300CAD71B /* RxRelay */; };
-		567D1F39296D9B2300CAD71B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 567D1F38296D9B2300CAD71B /* RxSwift */; };
 		567D1F3B296DA2DC00CAD71B /* ProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D1F3A296DA2DC00CAD71B /* ProductsResponse.swift */; };
 		567D1F3D296DA37E00CAD71B /* ProductsAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D1F3C296DA37E00CAD71B /* ProductsAPIService.swift */; };
 		567D1F3F296DA41900CAD71B /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D1F3E296DA41900CAD71B /* APIRequest.swift */; };
@@ -52,10 +56,11 @@
 		569A04C6296F6A5F00F1C56D /* ErrorEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04C5296F6A5F00F1C56D /* ErrorEntity.swift */; };
 		569A04C8296F6B6700F1C56D /* ErrorUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04C7296F6B6700F1C56D /* ErrorUseCase.swift */; };
 		569A04CA296F6BD300F1C56D /* ErrorUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04C9296F6BD300F1C56D /* ErrorUseCaseProtocol.swift */; };
+		569A04CE296F75D900F1C56D /* SessionStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04CD296F75D900F1C56D /* SessionStub.swift */; };
+		569A04D1296F776000F1C56D /* ProductsAPIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04D0296F776000F1C56D /* ProductsAPIServiceTests.swift */; };
 		56E36CF6296C92CB000745E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E36CF5296C92CB000745E5 /* AppDelegate.swift */; };
 		56E36CFF296C92CC000745E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56E36CFE296C92CC000745E5 /* Assets.xcassets */; };
 		56E36D02296C92CC000745E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E36D00296C92CC000745E5 /* LaunchScreen.storyboard */; };
-		56E36D0D296C92CC000745E5 /* DigioStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E36D0C296C92CC000745E5 /* DigioStoreTests.swift */; };
 		56E36D17296C92CD000745E5 /* DigioStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E36D16296C92CD000745E5 /* DigioStoreUITests.swift */; };
 		56E36D19296C92CD000745E5 /* DigioStoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E36D18296C92CD000745E5 /* DigioStoreUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -77,7 +82,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		56046E70296FA2DA0093F939 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		56046E5C296F81470093F939 /* URLSessionDataTaskSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskSpy.swift; sourceTree = "<group>"; };
+		56046E61296F9AF30093F939 /* DetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTests.swift; sourceTree = "<group>"; };
 		567D1F2A296D917200CAD71B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		567D1F2C296D919A00CAD71B /* ServiceAPICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPICall.swift; sourceTree = "<group>"; };
 		567D1F2F296D925900CAD71B /* URLSession+Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Misc.swift"; sourceTree = "<group>"; };
@@ -117,12 +137,13 @@
 		569A04C5296F6A5F00F1C56D /* ErrorEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorEntity.swift; sourceTree = "<group>"; };
 		569A04C7296F6B6700F1C56D /* ErrorUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorUseCase.swift; sourceTree = "<group>"; };
 		569A04C9296F6BD300F1C56D /* ErrorUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorUseCaseProtocol.swift; sourceTree = "<group>"; };
+		569A04CD296F75D900F1C56D /* SessionStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStub.swift; sourceTree = "<group>"; };
+		569A04D0296F776000F1C56D /* ProductsAPIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsAPIServiceTests.swift; sourceTree = "<group>"; };
 		56E36CF2296C92CB000745E5 /* DigioStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigioStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56E36CF5296C92CB000745E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56E36CFE296C92CC000745E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56E36D01296C92CC000745E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56E36D08296C92CC000745E5 /* DigioStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigioStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		56E36D0C296C92CC000745E5 /* DigioStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioStoreTests.swift; sourceTree = "<group>"; };
 		56E36D12296C92CD000745E5 /* DigioStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigioStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56E36D16296C92CD000745E5 /* DigioStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioStoreUITests.swift; sourceTree = "<group>"; };
 		56E36D18296C92CD000745E5 /* DigioStoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioStoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -133,13 +154,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56046E7B296FA3170093F939 /* RxRelay in Frameworks */,
 				569A04AC296F039B00F1C56D /* Kingfisher in Frameworks */,
-				567D1F35296D9B2300CAD71B /* RxCocoa in Frameworks */,
 				567D1F15296D898900CAD71B /* XCoordinatorRx in Frameworks */,
-				567D1F39296D9B2300CAD71B /* RxSwift in Frameworks */,
-				567D1F37296D9B2300CAD71B /* RxRelay in Frameworks */,
+				56046E79296FA3170093F939 /* RxCocoa in Frameworks */,
 				567D1F13296D898900CAD71B /* XCoordinator in Frameworks */,
 				569A04C4296F690700F1C56D /* RxGesture in Frameworks */,
+				56046E7D296FA3170093F939 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +168,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56046E81296FA3570093F939 /* RxCocoa in Frameworks */,
+				56046E7F296FA3570093F939 /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +183,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56046E5B296F81100093F939 /* Spys */ = {
+			isa = PBXGroup;
+			children = (
+				56046E5C296F81470093F939 /* URLSessionDataTaskSpy.swift */,
+			);
+			path = Spys;
+			sourceTree = "<group>";
+		};
+		56046E60296F9AE00093F939 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				56046E61296F9AF30093F939 /* DetailViewModelTests.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		567D1F0D296D892200CAD71B /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -539,6 +578,39 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		569A04CB296F75A300F1C56D /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				56046E5B296F81100093F939 /* Spys */,
+				569A04CF296F772F00F1C56D /* Stubs */,
+				569A04CC296F75C400F1C56D /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		569A04CC296F75C400F1C56D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				569A04D0296F776000F1C56D /* ProductsAPIServiceTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		569A04CF296F772F00F1C56D /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				569A04CD296F75D900F1C56D /* SessionStub.swift */,
+			);
+			name = Stubs;
+			sourceTree = "<group>";
+		};
+		569A04E2296F7E3500F1C56D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		56E36CE9296C92CB000745E5 = {
 			isa = PBXGroup;
 			children = (
@@ -546,6 +618,7 @@
 				56E36D0B296C92CC000745E5 /* DigioStoreTests */,
 				56E36D15296C92CD000745E5 /* DigioStoreUITests */,
 				56E36CF3296C92CB000745E5 /* Products */,
+				569A04E2296F7E3500F1C56D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -576,7 +649,8 @@
 		56E36D0B296C92CC000745E5 /* DigioStoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				56E36D0C296C92CC000745E5 /* DigioStoreTests.swift */,
+				56046E60296F9AE00093F939 /* Presentation */,
+				569A04CB296F75A300F1C56D /* Infrastructure */,
 			);
 			path = DigioStoreTests;
 			sourceTree = "<group>";
@@ -601,6 +675,7 @@
 				56E36CEE296C92CB000745E5 /* Sources */,
 				56E36CEF296C92CB000745E5 /* Frameworks */,
 				56E36CF0296C92CB000745E5 /* Resources */,
+				56046E70296FA2DA0093F939 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -610,11 +685,11 @@
 			packageProductDependencies = (
 				567D1F12296D898900CAD71B /* XCoordinator */,
 				567D1F14296D898900CAD71B /* XCoordinatorRx */,
-				567D1F34296D9B2300CAD71B /* RxCocoa */,
-				567D1F36296D9B2300CAD71B /* RxRelay */,
-				567D1F38296D9B2300CAD71B /* RxSwift */,
 				569A04AB296F039B00F1C56D /* Kingfisher */,
 				569A04C3296F690700F1C56D /* RxGesture */,
+				56046E78296FA3170093F939 /* RxCocoa */,
+				56046E7A296FA3170093F939 /* RxRelay */,
+				56046E7C296FA3170093F939 /* RxSwift */,
 			);
 			productName = DigioStore;
 			productReference = 56E36CF2296C92CB000745E5 /* DigioStore.app */;
@@ -634,6 +709,10 @@
 				56E36D0A296C92CC000745E5 /* PBXTargetDependency */,
 			);
 			name = DigioStoreTests;
+			packageProductDependencies = (
+				56046E7E296FA3570093F939 /* RxBlocking */,
+				56046E80296FA3570093F939 /* RxCocoa */,
+			);
 			productName = DigioStoreTests;
 			productReference = 56E36D08296C92CC000745E5 /* DigioStoreTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -690,9 +769,9 @@
 			mainGroup = 56E36CE9296C92CB000745E5;
 			packageReferences = (
 				567D1F11296D898900CAD71B /* XCRemoteSwiftPackageReference "XCoordinator" */,
-				567D1F33296D9B2300CAD71B /* XCRemoteSwiftPackageReference "RxSwift" */,
 				569A04AA296F039B00F1C56D /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				569A04C2296F690700F1C56D /* XCRemoteSwiftPackageReference "RxGesture" */,
+				56046E4C296F7FB80093F939 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 56E36CF3296C92CB000745E5 /* Products */;
 			projectDirPath = "";
@@ -804,7 +883,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56E36D0D296C92CC000745E5 /* DigioStoreTests.swift in Sources */,
+				569A04D1296F776000F1C56D /* ProductsAPIServiceTests.swift in Sources */,
+				569A04CE296F75D900F1C56D /* SessionStub.swift in Sources */,
+				56046E5D296F81470093F939 /* URLSessionDataTaskSpy.swift in Sources */,
+				56046E62296F9AF30093F939 /* DetailViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -966,6 +1048,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K992HP865M;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DigioStore/Supporting Files/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
@@ -999,6 +1082,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K992HP865M;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DigioStore/Supporting Files/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
@@ -1037,9 +1121,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruyther.DigioStoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigioStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DigioStore";
 			};
 			name = Debug;
@@ -1057,9 +1144,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruyther.DigioStoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DigioStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DigioStore";
 			};
 			name = Release;
@@ -1142,20 +1232,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		56046E4C296F7FB80093F939 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = exactVersion;
+				version = 6.5.0;
+			};
+		};
 		567D1F11296D898900CAD71B /* XCRemoteSwiftPackageReference "XCoordinator" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/quickbirdstudios/XCoordinator.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 2.0.0;
-			};
-		};
-		567D1F33296D9B2300CAD71B /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift";
-			requirement = {
-				branch = main;
-				kind = branch;
 			};
 		};
 		569A04AA296F039B00F1C56D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
@@ -1177,6 +1267,31 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		56046E78296FA3170093F939 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56046E4C296F7FB80093F939 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		56046E7A296FA3170093F939 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56046E4C296F7FB80093F939 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		56046E7C296FA3170093F939 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56046E4C296F7FB80093F939 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		56046E7E296FA3570093F939 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56046E4C296F7FB80093F939 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		56046E80296FA3570093F939 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56046E4C296F7FB80093F939 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
 		567D1F12296D898900CAD71B /* XCoordinator */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 567D1F11296D898900CAD71B /* XCRemoteSwiftPackageReference "XCoordinator" */;
@@ -1186,21 +1301,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 567D1F11296D898900CAD71B /* XCRemoteSwiftPackageReference "XCoordinator" */;
 			productName = XCoordinatorRx;
-		};
-		567D1F34296D9B2300CAD71B /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 567D1F33296D9B2300CAD71B /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		567D1F36296D9B2300CAD71B /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 567D1F33296D9B2300CAD71B /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		567D1F38296D9B2300CAD71B /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 567D1F33296D9B2300CAD71B /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
 		};
 		569A04AB296F039B00F1C56D /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;

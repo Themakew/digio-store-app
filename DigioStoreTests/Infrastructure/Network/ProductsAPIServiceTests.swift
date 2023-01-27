@@ -12,7 +12,6 @@ import XCTest
 
 final class ProductsAPIServiceTests: XCTestCase {
 
-    private var disposeBag: DisposeBag!
     private var sut: ServiceAPICallProtocol!
     private var sessionStub: SessionStub!
     private var dummyData: Data? {
@@ -43,7 +42,6 @@ final class ProductsAPIServiceTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        disposeBag = DisposeBag()
         sessionStub = SessionStub()
         sut = ServiceAPICall(session: sessionStub)
     }
@@ -52,7 +50,6 @@ final class ProductsAPIServiceTests: XCTestCase {
         super.tearDown()
         sessionStub = nil
         sut = nil
-        disposeBag = nil
     }
 
     func test_productsRequest_whenIsRequestedData_shouldReturnSuccess() {

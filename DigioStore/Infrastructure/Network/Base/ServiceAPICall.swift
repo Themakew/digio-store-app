@@ -33,7 +33,7 @@ final class ServiceAPICall: ServiceAPICallProtocol {
                 return Disposables.create()
             }
 
-            let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            let task = self.session.requestData(with: url) { data, response, error in
                 if error != nil, let localizedError = error?.localizedDescription {
                     single(.success(.failure(NetworkError.genericError(error: localizedError))))
                 }

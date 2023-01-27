@@ -7,15 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		138620755E1176A806576F08 /* Pods_DigioStore_DigioStoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5372FBE9F0018DC2018DE23A /* Pods_DigioStore_DigioStoreUITests.framework */; };
+		46A9C434F3C00224115EA851 /* Pods_DigioStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD26422832538DA90681BEE /* Pods_DigioStore.framework */; };
 		56046E5D296F81470093F939 /* URLSessionDataTaskSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56046E5C296F81470093F939 /* URLSessionDataTaskSpy.swift */; };
 		56046E62296F9AF30093F939 /* DetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56046E61296F9AF30093F939 /* DetailViewModelTests.swift */; };
-		56046E79296FA3170093F939 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 56046E78296FA3170093F939 /* RxCocoa */; };
-		56046E7B296FA3170093F939 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 56046E7A296FA3170093F939 /* RxRelay */; };
-		56046E7D296FA3170093F939 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 56046E7C296FA3170093F939 /* RxSwift */; };
-		56046E7F296FA3570093F939 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 56046E7E296FA3570093F939 /* RxBlocking */; };
-		56046E81296FA3570093F939 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 56046E80296FA3570093F939 /* RxCocoa */; };
-		567D1F13296D898900CAD71B /* XCoordinator in Frameworks */ = {isa = PBXBuildFile; productRef = 567D1F12296D898900CAD71B /* XCoordinator */; };
-		567D1F15296D898900CAD71B /* XCoordinatorRx in Frameworks */ = {isa = PBXBuildFile; productRef = 567D1F14296D898900CAD71B /* XCoordinatorRx */; };
 		567D1F2B296D917200CAD71B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D1F2A296D917200CAD71B /* NetworkError.swift */; };
 		567D1F2D296D919A00CAD71B /* ServiceAPICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D1F2C296D919A00CAD71B /* ServiceAPICall.swift */; };
 		567D1F30296D925900CAD71B /* URLSession+Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D1F2F296D925900CAD71B /* URLSession+Misc.swift */; };
@@ -45,14 +40,12 @@
 		569A04A3296EF41800F1C56D /* SpotlightItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04A2296EF41800F1C56D /* SpotlightItemCell.swift */; };
 		569A04A5296EF63E00F1C56D /* ProductItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04A4296EF63E00F1C56D /* ProductItemCell.swift */; };
 		569A04A7296F01B000F1C56D /* UIView+Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04A6296F01B000F1C56D /* UIView+Misc.swift */; };
-		569A04AC296F039B00F1C56D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 569A04AB296F039B00F1C56D /* Kingfisher */; };
 		569A04AE296F3D5900F1C56D /* DetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04AD296F3D5900F1C56D /* DetailEntity.swift */; };
 		569A04B2296F487400F1C56D /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04B1296F487400F1C56D /* Images.swift */; };
 		569A04B8296F599400F1C56D /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04B7296F599400F1C56D /* TitleCell.swift */; };
 		569A04BD296F60B900F1C56D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04BC296F60B900F1C56D /* DetailViewController.swift */; };
 		569A04BF296F60D300F1C56D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04BE296F60D300F1C56D /* DetailViewModel.swift */; };
 		569A04C1296F68C700F1C56D /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04C0296F68C700F1C56D /* ErrorView.swift */; };
-		569A04C4296F690700F1C56D /* RxGesture in Frameworks */ = {isa = PBXBuildFile; productRef = 569A04C3296F690700F1C56D /* RxGesture */; };
 		569A04C6296F6A5F00F1C56D /* ErrorEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04C5296F6A5F00F1C56D /* ErrorEntity.swift */; };
 		569A04C8296F6B6700F1C56D /* ErrorUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04C7296F6B6700F1C56D /* ErrorUseCase.swift */; };
 		569A04CA296F6BD300F1C56D /* ErrorUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A04C9296F6BD300F1C56D /* ErrorUseCaseProtocol.swift */; };
@@ -63,6 +56,7 @@
 		56E36D02296C92CC000745E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E36D00296C92CC000745E5 /* LaunchScreen.storyboard */; };
 		56E36D17296C92CD000745E5 /* DigioStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E36D16296C92CD000745E5 /* DigioStoreUITests.swift */; };
 		56E36D19296C92CD000745E5 /* DigioStoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E36D18296C92CD000745E5 /* DigioStoreUITestsLaunchTests.swift */; };
+		B2B278494D1492420984F025 /* Pods_DigioStoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75ACE90B3C6ED95422B67E8E /* Pods_DigioStoreTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,20 +76,9 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		56046E70296FA2DA0093F939 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		1022749A3916E22684E41520 /* Pods-DigioStore-DigioStoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigioStore-DigioStoreUITests.release.xcconfig"; path = "Target Support Files/Pods-DigioStore-DigioStoreUITests/Pods-DigioStore-DigioStoreUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5372FBE9F0018DC2018DE23A /* Pods_DigioStore_DigioStoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigioStore_DigioStoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56046E5C296F81470093F939 /* URLSessionDataTaskSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskSpy.swift; sourceTree = "<group>"; };
 		56046E61296F9AF30093F939 /* DetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTests.swift; sourceTree = "<group>"; };
 		567D1F2A296D917200CAD71B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -118,6 +101,12 @@
 		567D1F68296E0D5500CAD71B /* ProductsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsEntity.swift; sourceTree = "<group>"; };
 		567D1F6A296E11E200CAD71B /* Rx+Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rx+Misc.swift"; sourceTree = "<group>"; };
 		567D1F6C296E1C1F00CAD71B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		569688E32982BC0C00959261 /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxCocoa.xcframework; path = Carthage/Build/RxCocoa.xcframework; sourceTree = "<group>"; };
+		569688E42982BC0C00959261 /* RxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxBlocking.xcframework; path = Carthage/Build/RxBlocking.xcframework; sourceTree = "<group>"; };
+		569688E52982BC0C00959261 /* Kingfisher.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Kingfisher.xcframework; path = Carthage/Build/Kingfisher.xcframework; sourceTree = "<group>"; };
+		569688E62982BC0C00959261 /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
+		569688E72982BC0C00959261 /* RxRelay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxRelay.xcframework; path = Carthage/Build/RxRelay.xcframework; sourceTree = "<group>"; };
+		569688E82982BC0D00959261 /* RxTest.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxTest.xcframework; path = Carthage/Build/RxTest.xcframework; sourceTree = "<group>"; };
 		569A048F296E257300F1C56D /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		569A0491296E258F00F1C56D /* HomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSource.swift; sourceTree = "<group>"; };
 		569A0495296EEDC400F1C56D /* CollectionView+Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionView+Misc.swift"; sourceTree = "<group>"; };
@@ -147,6 +136,13 @@
 		56E36D12296C92CD000745E5 /* DigioStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigioStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56E36D16296C92CD000745E5 /* DigioStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioStoreUITests.swift; sourceTree = "<group>"; };
 		56E36D18296C92CD000745E5 /* DigioStoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioStoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6983D507E4066179ED87E2DD /* Pods-DigioStoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigioStoreTests.debug.xcconfig"; path = "Target Support Files/Pods-DigioStoreTests/Pods-DigioStoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6DBDCB27A521868293A2BEE1 /* Pods-DigioStore-DigioStoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigioStore-DigioStoreUITests.debug.xcconfig"; path = "Target Support Files/Pods-DigioStore-DigioStoreUITests/Pods-DigioStore-DigioStoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		75ACE90B3C6ED95422B67E8E /* Pods_DigioStoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigioStoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F5FBEFB917A5780B200B28 /* Pods-DigioStoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigioStoreTests.release.xcconfig"; path = "Target Support Files/Pods-DigioStoreTests/Pods-DigioStoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		8A233A51117FECD2CA7EC68B /* Pods-DigioStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigioStore.debug.xcconfig"; path = "Target Support Files/Pods-DigioStore/Pods-DigioStore.debug.xcconfig"; sourceTree = "<group>"; };
+		F604A64411DB48E2448E38EB /* Pods-DigioStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigioStore.release.xcconfig"; path = "Target Support Files/Pods-DigioStore/Pods-DigioStore.release.xcconfig"; sourceTree = "<group>"; };
+		FAD26422832538DA90681BEE /* Pods_DigioStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigioStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,13 +150,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56046E7B296FA3170093F939 /* RxRelay in Frameworks */,
-				569A04AC296F039B00F1C56D /* Kingfisher in Frameworks */,
-				567D1F15296D898900CAD71B /* XCoordinatorRx in Frameworks */,
-				56046E79296FA3170093F939 /* RxCocoa in Frameworks */,
-				567D1F13296D898900CAD71B /* XCoordinator in Frameworks */,
-				569A04C4296F690700F1C56D /* RxGesture in Frameworks */,
-				56046E7D296FA3170093F939 /* RxSwift in Frameworks */,
+				46A9C434F3C00224115EA851 /* Pods_DigioStore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,8 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56046E81296FA3570093F939 /* RxCocoa in Frameworks */,
-				56046E7F296FA3570093F939 /* RxBlocking in Frameworks */,
+				B2B278494D1492420984F025 /* Pods_DigioStoreTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				138620755E1176A806576F08 /* Pods_DigioStore_DigioStoreUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +597,15 @@
 		569A04E2296F7E3500F1C56D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				569688E52982BC0C00959261 /* Kingfisher.xcframework */,
+				569688E42982BC0C00959261 /* RxBlocking.xcframework */,
+				569688E32982BC0C00959261 /* RxCocoa.xcframework */,
+				569688E72982BC0C00959261 /* RxRelay.xcframework */,
+				569688E62982BC0C00959261 /* RxSwift.xcframework */,
+				569688E82982BC0D00959261 /* RxTest.xcframework */,
+				FAD26422832538DA90681BEE /* Pods_DigioStore.framework */,
+				5372FBE9F0018DC2018DE23A /* Pods_DigioStore_DigioStoreUITests.framework */,
+				75ACE90B3C6ED95422B67E8E /* Pods_DigioStoreTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -619,6 +618,7 @@
 				56E36D15296C92CD000745E5 /* DigioStoreUITests */,
 				56E36CF3296C92CB000745E5 /* Products */,
 				569A04E2296F7E3500F1C56D /* Frameworks */,
+				9D9285E1D12B38E7D9AD6404 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -664,6 +664,19 @@
 			path = DigioStoreUITests;
 			sourceTree = "<group>";
 		};
+		9D9285E1D12B38E7D9AD6404 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A233A51117FECD2CA7EC68B /* Pods-DigioStore.debug.xcconfig */,
+				F604A64411DB48E2448E38EB /* Pods-DigioStore.release.xcconfig */,
+				6DBDCB27A521868293A2BEE1 /* Pods-DigioStore-DigioStoreUITests.debug.xcconfig */,
+				1022749A3916E22684E41520 /* Pods-DigioStore-DigioStoreUITests.release.xcconfig */,
+				6983D507E4066179ED87E2DD /* Pods-DigioStoreTests.debug.xcconfig */,
+				84F5FBEFB917A5780B200B28 /* Pods-DigioStoreTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -671,26 +684,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56E36D1C296C92CD000745E5 /* Build configuration list for PBXNativeTarget "DigioStore" */;
 			buildPhases = (
+				279EB207E1FB9C4755765A6F /* [CP] Check Pods Manifest.lock */,
 				56F2C0DB296CAB4A002317ED /* Lint Script */,
 				56E36CEE296C92CB000745E5 /* Sources */,
 				56E36CEF296C92CB000745E5 /* Frameworks */,
 				56E36CF0296C92CB000745E5 /* Resources */,
-				56046E70296FA2DA0093F939 /* Embed Frameworks */,
+				C63F4A463EA9DF4F6711B41D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = DigioStore;
-			packageProductDependencies = (
-				567D1F12296D898900CAD71B /* XCoordinator */,
-				567D1F14296D898900CAD71B /* XCoordinatorRx */,
-				569A04AB296F039B00F1C56D /* Kingfisher */,
-				569A04C3296F690700F1C56D /* RxGesture */,
-				56046E78296FA3170093F939 /* RxCocoa */,
-				56046E7A296FA3170093F939 /* RxRelay */,
-				56046E7C296FA3170093F939 /* RxSwift */,
-			);
 			productName = DigioStore;
 			productReference = 56E36CF2296C92CB000745E5 /* DigioStore.app */;
 			productType = "com.apple.product-type.application";
@@ -699,9 +704,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56E36D1F296C92CD000745E5 /* Build configuration list for PBXNativeTarget "DigioStoreTests" */;
 			buildPhases = (
+				CC97E5E077AFC77A0C8D086F /* [CP] Check Pods Manifest.lock */,
 				56E36D04296C92CC000745E5 /* Sources */,
 				56E36D05296C92CC000745E5 /* Frameworks */,
 				56E36D06296C92CC000745E5 /* Resources */,
+				A4A675206CE6B96EAD8EF967 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -709,10 +716,6 @@
 				56E36D0A296C92CC000745E5 /* PBXTargetDependency */,
 			);
 			name = DigioStoreTests;
-			packageProductDependencies = (
-				56046E7E296FA3570093F939 /* RxBlocking */,
-				56046E80296FA3570093F939 /* RxCocoa */,
-			);
 			productName = DigioStoreTests;
 			productReference = 56E36D08296C92CC000745E5 /* DigioStoreTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -721,9 +724,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56E36D22296C92CD000745E5 /* Build configuration list for PBXNativeTarget "DigioStoreUITests" */;
 			buildPhases = (
+				C82A88A33E6AADE184FB7D6F /* [CP] Check Pods Manifest.lock */,
 				56E36D0E296C92CD000745E5 /* Sources */,
 				56E36D0F296C92CD000745E5 /* Frameworks */,
 				56E36D10296C92CD000745E5 /* Resources */,
+				1F8E2FD620FBB82228037252 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -767,12 +772,6 @@
 				Base,
 			);
 			mainGroup = 56E36CE9296C92CB000745E5;
-			packageReferences = (
-				567D1F11296D898900CAD71B /* XCRemoteSwiftPackageReference "XCoordinator" */,
-				569A04AA296F039B00F1C56D /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				569A04C2296F690700F1C56D /* XCRemoteSwiftPackageReference "RxGesture" */,
-				56046E4C296F7FB80093F939 /* XCRemoteSwiftPackageReference "RxSwift" */,
-			);
 			productRefGroup = 56E36CF3296C92CB000745E5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -811,6 +810,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1F8E2FD620FBB82228037252 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigioStore-DigioStoreUITests/Pods-DigioStore-DigioStoreUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigioStore-DigioStoreUITests/Pods-DigioStore-DigioStoreUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DigioStore-DigioStoreUITests/Pods-DigioStore-DigioStoreUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		279EB207E1FB9C4755765A6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DigioStore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		56F2C0DB296CAB4A002317ED /* Lint Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -829,6 +867,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "Scripts/lint.sh\n";
+		};
+		A4A675206CE6B96EAD8EF967 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigioStoreTests/Pods-DigioStoreTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigioStoreTests/Pods-DigioStoreTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DigioStoreTests/Pods-DigioStoreTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C63F4A463EA9DF4F6711B41D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigioStore/Pods-DigioStore-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DigioStore/Pods-DigioStore-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DigioStore/Pods-DigioStore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C82A88A33E6AADE184FB7D6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DigioStore-DigioStoreUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC97E5E077AFC77A0C8D086F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DigioStoreTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1042,6 +1158,7 @@
 		};
 		56E36D1D296C92CD000745E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A233A51117FECD2CA7EC68B /* Pods-DigioStore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1076,6 +1193,7 @@
 		};
 		56E36D1E296C92CD000745E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F604A64411DB48E2448E38EB /* Pods-DigioStore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1110,6 +1228,7 @@
 		};
 		56E36D20296C92CD000745E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6983D507E4066179ED87E2DD /* Pods-DigioStoreTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1133,6 +1252,7 @@
 		};
 		56E36D21296C92CD000745E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84F5FBEFB917A5780B200B28 /* Pods-DigioStoreTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1156,6 +1276,7 @@
 		};
 		56E36D23296C92CD000745E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DBDCB27A521868293A2BEE1 /* Pods-DigioStore-DigioStoreUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1174,6 +1295,7 @@
 		};
 		56E36D24296C92CD000745E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1022749A3916E22684E41520 /* Pods-DigioStore-DigioStoreUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1230,89 +1352,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		56046E4C296F7FB80093F939 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift";
-			requirement = {
-				kind = exactVersion;
-				version = 6.5.0;
-			};
-		};
-		567D1F11296D898900CAD71B /* XCRemoteSwiftPackageReference "XCoordinator" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/quickbirdstudios/XCoordinator.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-		569A04AA296F039B00F1C56D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		569A04C2296F690700F1C56D /* XCRemoteSwiftPackageReference "RxGesture" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/RxSwiftCommunity/RxGesture.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		56046E78296FA3170093F939 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 56046E4C296F7FB80093F939 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		56046E7A296FA3170093F939 /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 56046E4C296F7FB80093F939 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		56046E7C296FA3170093F939 /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 56046E4C296F7FB80093F939 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
-		56046E7E296FA3570093F939 /* RxBlocking */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 56046E4C296F7FB80093F939 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxBlocking;
-		};
-		56046E80296FA3570093F939 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 56046E4C296F7FB80093F939 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		567D1F12296D898900CAD71B /* XCoordinator */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 567D1F11296D898900CAD71B /* XCRemoteSwiftPackageReference "XCoordinator" */;
-			productName = XCoordinator;
-		};
-		567D1F14296D898900CAD71B /* XCoordinatorRx */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 567D1F11296D898900CAD71B /* XCRemoteSwiftPackageReference "XCoordinator" */;
-			productName = XCoordinatorRx;
-		};
-		569A04AB296F039B00F1C56D /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 569A04AA296F039B00F1C56D /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-		569A04C3296F690700F1C56D /* RxGesture */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 569A04C2296F690700F1C56D /* XCRemoteSwiftPackageReference "RxGesture" */;
-			productName = RxGesture;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 56E36CEA296C92CB000745E5 /* Project object */;
 }

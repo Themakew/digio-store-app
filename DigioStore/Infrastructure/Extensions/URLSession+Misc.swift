@@ -12,7 +12,7 @@ extension URLSession: URLSessionProtocol {
         with url: URL,
         completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void
     ) -> URLSessionDataTaskProtocol {
-        return dataTask(with: url)
+        return dataTask(with: url, completionHandler: completionHandler)
     }
 }
 

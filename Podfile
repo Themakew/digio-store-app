@@ -7,7 +7,7 @@ target 'DigioStore' do
 
   pod 'RxSwift', '6.5.0'
   pod 'RxCocoa', '6.5.0'
-  pod 'Kingfisher', '~> 7.0'
+  pod 'Kingfisher', '~> 7.6'
   pod 'XCoordinator', '~> 2.0'
   pod "RxGesture"
 

@@ -1,5 +1,5 @@
 PODS:
-  - Kingfisher (7.5.0)
+  - Kingfisher (7.9.1)
   - RxBlocking (6.5.0):
     - RxSwift (= 6.5.0)
   - RxCocoa (6.5.0):
@@ -13,12 +13,12 @@ PODS:
   - RxSwift (6.5.0)
   - RxTest (6.5.0):
     - RxSwift (= 6.5.0)
-  - XCoordinator (2.2.0):
-    - XCoordinator/Core (= 2.2.0)
-  - XCoordinator/Core (2.2.0)
+  - XCoordinator (2.2.1):
+    - XCoordinator/Core (= 2.2.1)
+  - XCoordinator/Core (2.2.1)
 
 DEPENDENCIES:
-  - Kingfisher (~> 7.0)
+  - Kingfisher (~> 7.6)
   - RxBlocking (= 6.5.0)
   - RxCocoa (= 6.5.0)
   - RxGesture
@@ -38,15 +38,15 @@ SPEC REPOS:
     - XCoordinator
 
 SPEC CHECKSUMS:
-  Kingfisher: b9c2a4a4af2990a768445c277359b27bde287d71
+  Kingfisher: 1d14e9f59cbe19389f591c929000332bf70efd32
   RxBlocking: 04b5fd28bb5ea49f7d64b80db8bbfe50d9cc1c7d
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxGesture: f3efb47ed2d26a8082f7b660d4a59970e275a7f8
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   RxTest: eb2d23adefc5a5ebf5779c7792fa3edfe6ebcc17
-  XCoordinator: a5f91e43ee944f508529763921165697d3211629
+  XCoordinator: 2cf9f72e10998b7a4a4bbeac3d07e071ea82fca3
 
-PODFILE CHECKSUM: d410ba8b60d9b177639e2b66638c929cec9b86cf
+PODFILE CHECKSUM: 0a36586b4161a39596adf0fb0edfed9502cfd229
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.13.0

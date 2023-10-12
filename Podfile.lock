@@ -22,6 +22,7 @@ DEPENDENCIES:
   - RxBlocking (= 6.5.0)
   - RxCocoa (= 6.5.0)
   - RxGesture
+  - RxRelay (= 6.5.0)
   - RxSwift (= 6.5.0)
   - RxTest (= 6.5.0)
   - XCoordinator (~> 2.0)
@@ -47,6 +48,6 @@ SPEC CHECKSUMS:
   RxTest: eb2d23adefc5a5ebf5779c7792fa3edfe6ebcc17
   XCoordinator: 2cf9f72e10998b7a4a4bbeac3d07e071ea82fca3
 
-PODFILE CHECKSUM: 0a36586b4161a39596adf0fb0edfed9502cfd229
+PODFILE CHECKSUM: e754212075810e01258f25ec2f592266ff5e3c54
 
 COCOAPODS: 1.13.0

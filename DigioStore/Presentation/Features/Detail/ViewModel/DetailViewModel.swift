@@ -24,7 +24,7 @@ protocol DetailViewModelInput {
 protocol DetailViewModelOutput {
     var titleText: Driver<String> { get }
     var image: PublishRelay<String> { get }
-    var descriptiontext: Driver<String> { get }
+    var descriptionText: Driver<String> { get }
 }
 
 extension DetailViewModelProtocol where Self: DetailViewModelInput & DetailViewModelOutput {
@@ -42,7 +42,7 @@ final class DetailViewModel: DetailViewModelProtocol, DetailViewModelInput, Deta
 
     // Outputs
     lazy var titleText: Driver<String> = .just(detailObject.title ?? "")
-    lazy var descriptiontext: Driver<String> = .just(detailObject.description ?? "")
+    lazy var descriptionText: Driver<String> = .just(detailObject.description ?? "")
     let image = PublishRelay<String>()
 
     // MARK: - Private Properties

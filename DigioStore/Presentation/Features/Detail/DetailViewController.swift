@@ -74,7 +74,7 @@ final class DetailViewController: UIViewController {
             .drive(rx.title)
             .disposed(by: disposeBag)
 
-        viewModel.output.descriptiontext
+        viewModel.output.descriptionText
             .drive(descriptionLabel.rx.text)
             .disposed(by: disposeBag)
 

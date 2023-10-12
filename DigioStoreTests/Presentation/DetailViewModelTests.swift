@@ -19,9 +19,9 @@ final class DetailViewModelTests: XCTestCase {
         sut = DetailViewModel(
             router: coor.weakRouter,
             detailObject: DetailEntity(
-                title: "",
-                imageURL: "",
-                description: ""
+                title: "Title",
+                imageURL: "imageURL",
+                description: "description"
             )
         )
     }
@@ -33,6 +33,16 @@ final class DetailViewModelTests: XCTestCase {
 
     func test_titleText_whenDetailObjectIsInject_shouldReturnCorrectString() {
         let result = try? sut.output.titleText.toBlocking().first()
-        XCTAssertEqual(result, "")
+        XCTAssertEqual(result, "Title")
+    }
+
+    func test_imageURL_whenDetailObjectIsInject_shouldReturnCorrectString() {
+        let result = try? sut.output.image.toBlocking().first()
+        XCTAssertEqual(result, "imageURL")
+    }
+
+    func test_description_whenDetailObjectIsInject_shouldReturnCorrectString() {
+        let result = try? sut.output.descriptionText.toBlocking().first()
+        XCTAssertEqual(result, "description")
     }
 }

@@ -55,7 +55,6 @@
 		56E36CFF296C92CC000745E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56E36CFE296C92CC000745E5 /* Assets.xcassets */; };
 		56E36D02296C92CC000745E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E36D00296C92CC000745E5 /* LaunchScreen.storyboard */; };
 		56E36D17296C92CD000745E5 /* DigioStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E36D16296C92CD000745E5 /* DigioStoreUITests.swift */; };
-		56E36D19296C92CD000745E5 /* DigioStoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E36D18296C92CD000745E5 /* DigioStoreUITestsLaunchTests.swift */; };
 		B2B278494D1492420984F025 /* Pods_DigioStoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75ACE90B3C6ED95422B67E8E /* Pods_DigioStoreTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -135,7 +134,6 @@
 		56E36D08296C92CC000745E5 /* DigioStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigioStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56E36D12296C92CD000745E5 /* DigioStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigioStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56E36D16296C92CD000745E5 /* DigioStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioStoreUITests.swift; sourceTree = "<group>"; };
-		56E36D18296C92CD000745E5 /* DigioStoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigioStoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6983D507E4066179ED87E2DD /* Pods-DigioStoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigioStoreTests.debug.xcconfig"; path = "Target Support Files/Pods-DigioStoreTests/Pods-DigioStoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6DBDCB27A521868293A2BEE1 /* Pods-DigioStore-DigioStoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DigioStore-DigioStoreUITests.debug.xcconfig"; path = "Target Support Files/Pods-DigioStore-DigioStoreUITests/Pods-DigioStore-DigioStoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		75ACE90B3C6ED95422B67E8E /* Pods_DigioStoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigioStoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -659,7 +657,6 @@
 			isa = PBXGroup;
 			children = (
 				56E36D16296C92CD000745E5 /* DigioStoreUITests.swift */,
-				56E36D18296C92CD000745E5 /* DigioStoreUITestsLaunchTests.swift */,
 			);
 			path = DigioStoreUITests;
 			sourceTree = "<group>";
@@ -1011,7 +1008,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				56E36D17296C92CD000745E5 /* DigioStoreUITests.swift in Sources */,
-				56E36D19296C92CD000745E5 /* DigioStoreUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

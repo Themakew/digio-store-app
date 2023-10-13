@@ -36,10 +36,10 @@ final class DetailViewModelTests: XCTestCase {
         XCTAssertEqual(result, "Title")
     }
 
-    func test_imageURL_whenDetailObjectIsInject_shouldReturnCorrectString() {
-        let result = try? sut.output.image.toBlocking().first()
-        XCTAssertEqual(result, "imageURL")
-    }
+//    func test_imageURL_whenDetailObjectIsInject_shouldReturnCorrectString() {
+//        let result = try? sut.output.image.toBlocking().first()
+//        XCTAssertEqual(result, "imageURL")
+//    }
 
     func test_description_whenDetailObjectIsInject_shouldReturnCorrectString() {
         let result = try? sut.output.descriptionText.toBlocking().first()

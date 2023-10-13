@@ -12,6 +12,9 @@ jobs:
           name: Install CocoaPods
           command: sudo gem install cocoapods
       - run:
+          name: Install Pods
+          command: pod install
+      - run:
           name: Build and Test
           command: |
             set -o pipefail

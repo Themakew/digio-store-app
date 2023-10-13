@@ -11,6 +11,7 @@
 		46A9C434F3C00224115EA851 /* Pods_DigioStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD26422832538DA90681BEE /* Pods_DigioStore.framework */; };
 		56046E5D296F81470093F939 /* URLSessionDataTaskSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56046E5C296F81470093F939 /* URLSessionDataTaskSpy.swift */; };
 		56046E62296F9AF30093F939 /* DetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56046E61296F9AF30093F939 /* DetailViewModelTests.swift */; };
+		5641F1FF2AD9D9A800EDDF91 /* UIImageView+Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5641F1FE2AD9D9A800EDDF91 /* UIImageView+Misc.swift */; };
 		567D1F2B296D917200CAD71B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D1F2A296D917200CAD71B /* NetworkError.swift */; };
 		567D1F2D296D919A00CAD71B /* ServiceAPICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D1F2C296D919A00CAD71B /* ServiceAPICall.swift */; };
 		567D1F30296D925900CAD71B /* URLSession+Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D1F2F296D925900CAD71B /* URLSession+Misc.swift */; };
@@ -81,6 +82,7 @@
 		5372FBE9F0018DC2018DE23A /* Pods_DigioStore_DigioStoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigioStore_DigioStoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56046E5C296F81470093F939 /* URLSessionDataTaskSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskSpy.swift; sourceTree = "<group>"; };
 		56046E61296F9AF30093F939 /* DetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTests.swift; sourceTree = "<group>"; };
+		5641F1FE2AD9D9A800EDDF91 /* UIImageView+Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Misc.swift"; sourceTree = "<group>"; };
 		567D1F2A296D917200CAD71B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		567D1F2C296D919A00CAD71B /* ServiceAPICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAPICall.swift; sourceTree = "<group>"; };
 		567D1F2F296D925900CAD71B /* URLSession+Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Misc.swift"; sourceTree = "<group>"; };
@@ -401,6 +403,7 @@
 				567D1F6A296E11E200CAD71B /* Rx+Misc.swift */,
 				569A0495296EEDC400F1C56D /* CollectionView+Misc.swift */,
 				569A04A6296F01B000F1C56D /* UIView+Misc.swift */,
+				5641F1FE2AD9D9A800EDDF91 /* UIImageView+Misc.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -973,6 +976,7 @@
 				569A04CA296F6BD300F1C56D /* ErrorUseCaseProtocol.swift in Sources */,
 				567D1F50296DDE3400CAD71B /* ProductsUseCaseProtocol.swift in Sources */,
 				567D1F5F296DDFA800CAD71B /* HomeViewController.swift in Sources */,
+				5641F1FF2AD9D9A800EDDF91 /* UIImageView+Misc.swift in Sources */,
 				569A04A7296F01B000F1C56D /* UIView+Misc.swift in Sources */,
 				567D1F32296D9A8000CAD71B /* URLSessionProtocol.swift in Sources */,
 				567D1F6B296E11E200CAD71B /* Rx+Misc.swift in Sources */,

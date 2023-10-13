@@ -70,9 +70,6 @@ extension ProductItemCell: Configurable {
     typealias Configuration = ProductEntity
 
     func configure(content: Configuration) {
-        if let urlString = content.imageURL,
-           let url = URL(string: urlString) {
-            thumbnailImage.kf.setImage(with: url, placeholder: Images.default_image)
-        }
+        thumbnailImage.setImageWithKingfisher(content.imageURL)
     }
 }

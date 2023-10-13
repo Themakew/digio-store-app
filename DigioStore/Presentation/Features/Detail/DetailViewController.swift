@@ -81,9 +81,7 @@ final class DetailViewController: UIViewController {
         viewModel.output.image
             .observe(on: MainScheduler.asyncInstance)
             .subscribe(onNext: { [weak self] urlString in
-                if let url = URL(string: urlString) {
-                    self?.thumbnailImage.kf.setImage(with: url, placeholder: Images.default_image)
-                }
+                self?.thumbnailImage.setImageWithKingfisher(urlString)
             })
             .disposed(by: disposeBag)
 

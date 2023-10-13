@@ -71,9 +71,6 @@ extension SpotlightItemCell: Configurable {
     typealias Configuration = SpotlightEntity
 
     func configure(content: Configuration) {
-        if let urlString = content.bannerURL,
-           let url = URL(string: urlString) {
-            thumbnailImage.kf.setImage(with: url, placeholder: Images.default_image)
-        }
+        thumbnailImage.setImageWithKingfisher(content.bannerURL)
     }
 }

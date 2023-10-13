@@ -2,6 +2,7 @@ version: 2.1
 
 jobs:
   build-and-test:
+    no_output_timeout: 20m
     macos:
       xcode: "15.0"
     environment:

@@ -5,7 +5,6 @@
 //  Created by Ruyther Costa on 11/01/23.
 //
 
-import Foundation
 @testable import DigioStore
 
 final class URLSessionDataTaskSpy: URLSessionDataTaskProtocol {

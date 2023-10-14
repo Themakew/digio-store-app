@@ -17,13 +17,12 @@ protocol DetailViewModelProtocol {
 }
 
 protocol DetailViewModelInput {
-    var getData: PublishRelay<Void> { get }
     var dismissScreen: PublishRelay<Void> { get }
 }
 
 protocol DetailViewModelOutput {
     var titleText: Driver<String> { get }
-    var image: PublishRelay<String> { get }
+    var image: Driver<String> { get }
     var descriptionText: Driver<String> { get }
 }
 
@@ -41,9 +40,9 @@ final class DetailViewModel: DetailViewModelProtocol, DetailViewModelInput, Deta
     let dismissScreen = PublishRelay<Void>()
 
     // Outputs
-    lazy var titleText: Driver<String> = .just(detailObject.title ?? "")
-    lazy var descriptionText: Driver<String> = .just(detailObject.description ?? "")
-    let image = PublishRelay<String>()
+    lazy var titleText: Driver<String> = .just(detailObject.title)
+    lazy var descriptionText: Driver<String> = .just(detailObject.description)
+    lazy var image: Driver<String> = .just(detailObject.imageURL)
 
     // MARK: - Private Properties
 
@@ -66,13 +65,6 @@ final class DetailViewModel: DetailViewModelProtocol, DetailViewModelInput, Deta
     // MARK: - Private Methods
 
     private func bindRx() {
-        getData
-            .withUnretained(self)
-            .subscribe(onNext: { this, _ in
-                this.image.accept(this.detailObject.imageURL ?? "")
-            })
-            .disposed(by: disposeBag)
-
         dismissScreen
             .subscribe(onNext: { [weak self] in
                 self?.router.trigger(.dismiss)

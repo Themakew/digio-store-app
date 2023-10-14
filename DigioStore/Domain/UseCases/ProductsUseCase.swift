@@ -75,25 +75,25 @@ final class ProductsUseCase: ProductsUseCaseProtocol {
 
     func getDetailObject(object: SpotlightEntity) -> DetailEntity {
         return DetailEntity(
-            title: object.name,
-            imageURL: object.bannerURL,
-            description: object.description
+            title: object.name ?? "",
+            imageURL: object.bannerURL ?? "",
+            description: object.description ?? ""
         )
     }
 
     func getDetailObject(object: CashEntity) -> DetailEntity {
         return DetailEntity(
-            title: object.title,
-            imageURL: object.bannerURL,
-            description: object.description
+            title: object.title ?? "",
+            imageURL: object.bannerURL ?? "",
+            description: object.description ?? ""
         )
     }
 
     func getDetailObject(object: ProductEntity) -> DetailEntity {
         return DetailEntity(
-            title: object.name,
-            imageURL: object.imageURL,
-            description: object.description
+            title: object.name ?? "",
+            imageURL: object.imageURL ?? "",
+            description: object.description ?? ""
         )
     }
 }

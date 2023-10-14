@@ -63,8 +63,6 @@ final class DetailViewController: UIViewController {
         bindRx()
 
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: backNavButton)
-
-        viewModel.input.getData.accept(())
     }
 
     // MARK: - Private Methods
@@ -79,9 +77,8 @@ final class DetailViewController: UIViewController {
             .disposed(by: disposeBag)
 
         viewModel.output.image
-            .observe(on: MainScheduler.asyncInstance)
-            .subscribe(onNext: { [weak self] urlString in
-                self?.thumbnailImage.setImageWithKingfisher(urlString)
+            .drive(onNext: { [weak self] urlString in
+                self?.thumbnailImage.kf.setImage(with: URL(string: urlString))
             })
             .disposed(by: disposeBag)
 

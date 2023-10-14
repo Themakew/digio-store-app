@@ -10,7 +10,6 @@ opt_in_rules:
     - closure_end_indentation
     - closure_spacing
     - comments_space
-    - empty_count
     - explicit_init
     - explicit_failure_calls
     - extension_access_modifier
@@ -43,7 +42,6 @@ opt_in_rules:
     - sorted_first_last
     - yoda_condition
     - legacy_multiple
-    - anyobject_protocol
     - collection_alignment
     - contains_over_filter_count
     - contains_over_filter_is_empty
@@ -94,7 +92,7 @@ nesting:
     type_level:
         warning: 3
         error: 3
-    statement_level:
+    function_level:
         warning: 5
         error: 5
 
@@ -126,7 +124,6 @@ colon:
     severity: error
 
 comma: error
-empty_count: error
 legacy_constant: error
 trailing_newline: error
 trailing_semicolon: error

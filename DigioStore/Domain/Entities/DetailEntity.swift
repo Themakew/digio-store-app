@@ -6,7 +6,7 @@
 //
 
 struct DetailEntity {
-    let title: String?
-    let imageURL: String?
-    let description: String?
+    let title: String
+    let imageURL: String
+    let description: String
 }

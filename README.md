@@ -36,9 +36,5 @@ It is quite straightforward:
 
 Run `./bootstrap.sh` from the root directory of this repository, it will install all dependecies and open the Xcode Project automatically.
 
-## TODO (Future Work)
-
-- For some reason the RxBlocking is presenting some bug when running the unit tests, the work around is necessary yet. After fixing this issue, the future work would be increase the test coverage.
-
 ---
 <p align="center">Made by Ruyther Costa | Find me on <a href="https://www.linkedin.com/in/ruyther">LinkedIn</a></p>

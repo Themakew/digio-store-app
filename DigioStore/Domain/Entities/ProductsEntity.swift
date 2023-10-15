@@ -17,7 +17,7 @@ struct ProductsEntity {
 
 // MARK: - Cash
 
-struct CashEntity: DataSource {
+struct CashEntity: DataSource, Equatable {
     let title: String?
     let bannerURL: String?
     let description: String?
@@ -25,7 +25,7 @@ struct CashEntity: DataSource {
 
 // MARK: - Product
 
-struct ProductEntity: DataSource {
+struct ProductEntity: DataSource, Equatable {
     let name: String?
     let imageURL: String?
     let description: String?
@@ -33,7 +33,7 @@ struct ProductEntity: DataSource {
 
 // MARK: - Spotlight
 
-struct SpotlightEntity: DataSource {
+struct SpotlightEntity: DataSource, Equatable {
     let name: String?
     let bannerURL: String?
     let description: String?
@@ -41,6 +41,6 @@ struct SpotlightEntity: DataSource {
 
 // MARK: - Title
 
-struct TitleEntity: DataSource {
+struct TitleEntity: DataSource, Equatable {
     let title: String
 }

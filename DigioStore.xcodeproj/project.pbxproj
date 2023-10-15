@@ -11,6 +11,7 @@
 		46A9C434F3C00224115EA851 /* Pods_DigioStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD26422832538DA90681BEE /* Pods_DigioStore.framework */; };
 		56046E5D296F81470093F939 /* URLSessionDataTaskSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56046E5C296F81470093F939 /* URLSessionDataTaskSpy.swift */; };
 		56046E62296F9AF30093F939 /* DetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56046E61296F9AF30093F939 /* DetailViewModelTests.swift */; };
+		56354A3D2ADB9002005DE5E7 /* EquatableConformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56354A3C2ADB9002005DE5E7 /* EquatableConformance.swift */; };
 		5641F1FF2AD9D9A800EDDF91 /* UIImageView+Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5641F1FE2AD9D9A800EDDF91 /* UIImageView+Misc.swift */; };
 		5641F2012AD9DD9D00EDDF91 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5641F2002AD9DD9D00EDDF91 /* HomeViewModelTests.swift */; };
 		5641F2032AD9DE8500EDDF91 /* ProductsUseCaseStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5641F2022AD9DE8500EDDF91 /* ProductsUseCaseStub.swift */; };
@@ -85,6 +86,7 @@
 		5372FBE9F0018DC2018DE23A /* Pods_DigioStore_DigioStoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DigioStore_DigioStoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56046E5C296F81470093F939 /* URLSessionDataTaskSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskSpy.swift; sourceTree = "<group>"; };
 		56046E61296F9AF30093F939 /* DetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTests.swift; sourceTree = "<group>"; };
+		56354A3C2ADB9002005DE5E7 /* EquatableConformance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquatableConformance.swift; sourceTree = "<group>"; };
 		5641F1FE2AD9D9A800EDDF91 /* UIImageView+Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Misc.swift"; sourceTree = "<group>"; };
 		5641F2002AD9DD9D00EDDF91 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		5641F2022AD9DE8500EDDF91 /* ProductsUseCaseStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsUseCaseStub.swift; sourceTree = "<group>"; };
@@ -197,6 +199,14 @@
 				5641F2002AD9DD9D00EDDF91 /* HomeViewModelTests.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		56354A3B2ADB8FDE005DE5E7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				56354A3C2ADB9002005DE5E7 /* EquatableConformance.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		567D1F0D296D892200CAD71B /* Application */ = {
@@ -662,6 +672,7 @@
 		56E36D0B296C92CC000745E5 /* DigioStoreTests */ = {
 			isa = PBXGroup;
 			children = (
+				56354A3B2ADB8FDE005DE5E7 /* Extensions */,
 				56046E60296F9AE00093F939 /* Presentation */,
 				569A04CB296F75A300F1C56D /* Infrastructure */,
 			);
@@ -1015,6 +1026,7 @@
 				5641F2012AD9DD9D00EDDF91 /* HomeViewModelTests.swift in Sources */,
 				5641F2032AD9DE8500EDDF91 /* ProductsUseCaseStub.swift in Sources */,
 				569A04D1296F776000F1C56D /* ProductsAPIServiceTests.swift in Sources */,
+				56354A3D2ADB9002005DE5E7 /* EquatableConformance.swift in Sources */,
 				5641F2052AD9DE9300EDDF91 /* ErrorUseCaseStub.swift in Sources */,
 				5641F2072ADA3B9600EDDF91 /* HomeCoordinatorSpy.swift in Sources */,
 				569A04CE296F75D900F1C56D /* SessionStub.swift in Sources */,

@@ -10,6 +10,10 @@ import RxRelay
 @testable import DigioStore
 
 final class ErrorUseCaseStub: ErrorUseCaseProtocol {
+
+    var tryAgainObserver: PublishRelay<Void>?
+    var isShown: BehaviorRelay<Bool>?
+
     func getErrorData(tryAgainObserver: PublishRelay<Void>, isShown: BehaviorRelay<Bool>) -> ErrorEntity {
         let genericErrorEntity = GenericErrorEntity(
             messageErrorText: "messageErrorText",
@@ -17,8 +21,9 @@ final class ErrorUseCaseStub: ErrorUseCaseProtocol {
             icon: UIImage(),
             backgroudColor: .black
         )
-        let tryAgainObserver = PublishRelay<Void>()
-        let isShown = BehaviorRelay<Bool>(value: false)
+
+        self.tryAgainObserver = tryAgainObserver
+        self.isShown = isShown
 
         return ErrorEntity(
             dataSource: genericErrorEntity,

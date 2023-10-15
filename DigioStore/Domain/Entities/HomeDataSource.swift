@@ -10,20 +10,32 @@ import RxRelay
 
 // MARK: - HomeDataSource
 
-struct HomeDataSource {
+struct HomeDataSource: Equatable {
+    static func == (lhs: HomeDataSource, rhs: HomeDataSource) -> Bool {
+        return lhs.items.count == rhs.items.count
+    }
+
     var items: [DataSource]
 }
 
 // MARK: - HomeSpotlightSection
 
-struct HomeSpotlightSection: DataSource {
+struct HomeSpotlightSection: DataSource, Equatable {
+    static func == (lhs: HomeSpotlightSection, rhs: HomeSpotlightSection) -> Bool {
+        return lhs.items == rhs.items && lhs.itemSelectedObserver === rhs.itemSelectedObserver
+    }
+
     let items: [SpotlightEntity]
     let itemSelectedObserver: PublishRelay<IndexPath>
 }
 
 // MARK: - HomeProductSection
 
-struct HomeProductSection: DataSource {
+struct HomeProductSection: DataSource, Equatable {
+    static func == (lhs: HomeProductSection, rhs: HomeProductSection) -> Bool {
+        return lhs.items == rhs.items && lhs.itemSelectedObserver === rhs.itemSelectedObserver
+    }
+
     let items: [ProductEntity]
     let itemSelectedObserver: PublishRelay<IndexPath>
 }

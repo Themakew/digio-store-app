@@ -120,3 +120,18 @@ extension DetailViewController: ViewCode {
         view.backgroundColor = .white
     }
 }
+
+#if DEBUG
+
+// MARK: - DetailViewController Extension To Expose Private Properties
+
+extension DetailViewController {
+    func getDescriptionLabel() -> UILabel {
+        return descriptionLabel
+    }
+
+    func getBackNavButton() -> UIButton {
+        return backNavButton
+    }
+}
+#endif

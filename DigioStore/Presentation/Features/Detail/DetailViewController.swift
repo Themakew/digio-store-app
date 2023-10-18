@@ -134,4 +134,5 @@ extension DetailViewController {
         return backNavButton
     }
 }
+
 #endif

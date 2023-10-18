@@ -184,3 +184,27 @@ extension HomeViewController: ViewCode {
         collectionView.register(cellClass: TitleCell.self)
     }
 }
+
+#if DEBUG
+
+// MARK: - HomeViewController Extension To Expose Private Properties
+
+extension HomeViewController {
+    func getSpinnerView() -> UIView {
+        return spinnerView
+    }
+
+    func getSpinnerIndicatorView() -> UIActivityIndicatorView {
+        return spinnerIndicatorView
+    }
+
+    func getErrorView() -> ErrorView {
+        return errorView
+    }
+
+    func getCollectionView() -> UICollectionView {
+        return collectionView
+    }
+}
+
+#endif

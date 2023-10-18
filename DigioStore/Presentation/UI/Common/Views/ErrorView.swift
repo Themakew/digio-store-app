@@ -145,3 +145,23 @@ extension ErrorView: Configurable {
             .disposed(by: disposeBag)
     }
 }
+
+#if DEBUG
+
+// MARK: - ErrorView Extension To Expose Private Properties
+
+extension ErrorView {
+    func getMessageErrorLabelText() -> String? {
+        return messageErrorLabel.text
+    }
+
+    func getTryAgainTextLabelText() -> String? {
+        return tryAgainTextLabel.text
+    }
+
+    func getBackgroundColor() -> UIColor? {
+        return backgroundColor
+    }
+}
+
+#endif
